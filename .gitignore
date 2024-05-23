@@ -1,0 +1,11 @@
+db/data/
+db/logs
+.vscode
+node_modules/
+api/YMovieHelper/scripts/test_https
+api/YMovieHelper/scripts/test_sqls
+wire_gen.go
+__debug_bin
+scripts/checks
+api/YMovieHelper/data
+api/YMovieHelper/temp

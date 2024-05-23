@@ -1,0 +1,28 @@
+// See https://containers.dev/implementors/json_reference/ for configuration reference
+{
+  "name": "Frontend Container",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "frontend",
+  "remoteUser": "node",
+  "workspaceFolder": "/home/node/app",
+  "postCreateCommand": "./entrypoint.sh",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "oderwat.indent-rainbow",
+        "MS-CEINTL.vscode-language-pack-ja",
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint",
+        "patbenatar.advanced-new-file",
+        "christian-kohler.path-intellisense",
+        "AntiAntiSepticeye.vscode-color-picker",
+        "foxundermoon.next-js",
+        "Tyriar.luna-paint",
+        "ryu1kn.partial-diff",
+        "mosapride.zenkaku",
+        "wix.vscode-import-cost",
+        "formulahendry.vscode-mysql"
+      ]
+    }
+  }
+}

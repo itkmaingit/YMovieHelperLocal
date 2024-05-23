@@ -1,0 +1,297 @@
+/* Sakura.css v1.4.1
+ * ================
+ * Minimal css theme.
+ * Project: https://github.com/oxalorg/sakura/
+ */
+/* Body */
+.markdown html {
+  font-size: 62.5%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+}
+
+.markdown body {
+  font-size: 1.8rem;
+  line-height: 1.618;
+  max-width: 38em;
+  margin: auto;
+  color: #4a4a4a;
+  background-color: #f9f9f9;
+  padding: 13px;
+}
+
+.markdown h1,
+.markdown h2,
+.markdown h3,
+.markdown h4,
+.markdown h5,
+.markdown h6 {
+  line-height: 1.1;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  font-weight: 700;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-word;
+}
+
+.markdown h1 {
+  font-size: 2.35em;
+}
+
+.markdown h2 {
+  font-size: 2em;
+}
+
+.markdown h3 {
+  font-size: 1.75em;
+}
+
+.markdown h4 {
+  font-size: 1.5em;
+}
+
+.markdown h5 {
+  font-size: 1.25em;
+}
+
+.markdown h6 {
+  font-size: 1em;
+}
+
+.markdown p {
+  margin-top: 0px;
+  margin-bottom: 2.5rem;
+  font-size: 1.25em;
+}
+
+.markdown small,
+.markdown sub,
+.markdown sup {
+  font-size: 75%;
+}
+
+.markdown hr {
+  border-color: #4682b4;
+}
+
+.markdown a {
+  text-decoration: none;
+  color: #4682b4;
+}
+.markdown a:visited {
+  color: #4682b4;
+}
+.markdown a:hover {
+  color: #982c61;
+  border-bottom: 2px solid #4a4a4a;
+}
+
+.markdown ul {
+  padding-left: 1.4em;
+  margin-top: 0px;
+  margin-bottom: 2.5rem;
+  /* font-size: 1.25em; */
+}
+
+.markdown li {
+  margin-bottom: 0.4em;
+  font-size: 1.25em;
+}
+
+.markdown blockquote {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 1em;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  padding-right: 0.8em;
+  border-left: 5px solid #4682b4;
+  margin-bottom: 2.5rem;
+  background-color: #f1f1f1;
+}
+
+.markdown blockquote p {
+  margin-bottom: 0;
+}
+
+.markdown img,
+.markdown video {
+  height: auto;
+  max-width: 100%;
+  margin-top: 0px;
+  margin-bottom: 2.5rem;
+}
+
+/* Pre and Code */
+.markdown pre {
+  background-color: #f1f1f1;
+  display: block;
+  padding: 1em;
+  overflow-x: auto;
+  margin-top: 0px;
+  margin-bottom: 2.5rem;
+  font-size: 0.9em;
+}
+
+.markdown code,
+.markdown kbd,
+.markdown samp {
+  font-size: 0.9em;
+  padding: 0 0.5em;
+  background-color: #f1f1f1;
+  white-space: pre-wrap;
+}
+
+.markdown pre > code {
+  padding: 0;
+  background-color: transparent;
+  white-space: pre;
+  font-size: 1em;
+}
+
+/* Tables */
+.markdown table {
+  text-align: justify;
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1.25em;
+}
+
+.markdown td,
+.markdown th {
+  padding: 0.5em;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+/* Buttons, forms and input */
+.markdown input,
+.markdown textarea {
+  border: 1px solid #4a4a4a;
+}
+.markdown input:focus,
+.markdown textarea:focus {
+  border: 1px solid #4682b4;
+}
+
+.markdown textarea {
+  width: 100%;
+}
+
+.markdown button,
+.markdown input[type="submit"],
+.markdown input[type="reset"],
+.markdown input[type="button"] {
+  display: inline-block;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: #4682b4;
+  color: #f9f9f9;
+  border-radius: 1px;
+  border: 1px solid #4682b4;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.markdown button[disabled],
+.markdown input[type="submit"][disabled],
+.markdown input[type="reset"][disabled],
+.markdown input[type="button"][disabled] {
+  cursor: default;
+  opacity: 0.5;
+}
+
+.markdown button:focus:enabled,
+.markdown button:hover:enabled,
+.markdown input[type="submit"]:focus:enabled,
+.markdown input[type="submit"]:hover:enabled,
+.markdown input[type="reset"]:focus:enabled,
+.markdown input[type="reset"]:hover:enabled,
+.markdown input[type="button"]:focus:enabled,
+.markdown input[type="button"]:hover:enabled {
+  background-color: #982c61;
+  border-color: #982c61;
+  color: #f9f9f9;
+  outline: 0;
+}
+
+.markdown textarea,
+.markdown select,
+.markdown input {
+  color: #4a4a4a;
+  padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
+  margin-bottom: 10px;
+  background-color: #f1f1f1;
+  border: 1px solid #f1f1f1;
+  border-radius: 4px;
+  box-shadow: none;
+  box-sizing: border-box;
+}
+.markdown textarea:focus,
+.markdown select:focus,
+.markdown input:focus {
+  border: 1px solid #4682b4;
+  outline: 0;
+}
+
+.markdown input[type="checkbox"]:focus {
+  outline: 1px dotted #4682b4;
+}
+
+.markdown label,
+.markdown legend,
+.markdown fieldset {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+@media (max-width: 684px) {
+  .markdown body {
+    font-size: 0.8rem;
+  }
+  .markdown p {
+    font-size: 0.8rem;
+  }
+
+  .markdown h1 {
+    font-size: 1.3em;
+  }
+
+  .markdown h2 {
+    font-size: 1.2em;
+  }
+
+  .markdown h3 {
+    font-size: 1.1em;
+  }
+
+  .markdown h4 {
+    font-size: 1em;
+  }
+
+  .markdown h5 {
+    font-size: 0.8em;
+  }
+
+  .markdown h6 {
+    font-size: 0.8em;
+  }
+
+  .markdown li {
+    margin-bottom: 0.4em;
+    font-size: 0.8em;
+  }
+
+  .markdown table {
+    text-align: justify;
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.8em;
+  }
+}

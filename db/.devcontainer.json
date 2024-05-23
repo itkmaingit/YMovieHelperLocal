@@ -1,0 +1,7 @@
+{
+  "name": "DB Container",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "db",
+  "remoteUser": "node",
+  "shutdownAction": "none"
+}

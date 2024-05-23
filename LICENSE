@@ -1,0 +1,15 @@
+# Your Project License
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+1. **Local Use Only**: The Software may only be used in a local environment. This means that running the Software on a local server for personal use or development purposes is permitted. However, making the Software accessible to third parties over a network (such as the internet) is strictly prohibited.
+
+2. **No Public Deployment**: You may not deploy the Software in any manner that makes it accessible to others, whether for commercial or non-commercial purposes.
+
+3. **Modification and Forking**: You are allowed to modify the Software and create forks. However, the modified versions must also comply with the conditions of this license, specifically the prohibition on public deployment.
+
+4. **Contribution**: Contributions to the Software in the form of pull requests, bug reports, or other suggestions are welcome. However, the maintainers of the Software are under no obligation to respond to, address, or incorporate such contributions.
+
+5. **Disclaimer of Warranty**: The Software is provided "as is", without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages, or other liability, whether in an action of contract, tort, or otherwise, arising from, out of, or in connection with the Software or the use or other dealings in the Software.
+
+By using the Software, you agree to comply with the terms and conditions of this license.
