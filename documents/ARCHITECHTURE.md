@@ -2,6 +2,10 @@
 
 This is the specification for YMovieHelper. Please follow the Installation below to build and work with the environment.
 
+## Caution
+
+This project does not include .env files in the .gitignore for usability reasons. Please use with caution.
+
 ## Directory Structure
 
 ### Backend
@@ -82,14 +86,18 @@ The directory structure does not deviate much from the standard structure define
 3. Collect dependent packages within each container.
 
    > In api container, all you have need to do is to execute command in below.
+   >
    > ```
    > make init
    > ```
+   >
    > go run main.go fails because no environment variables are set. Ask the administrator for the environment variables.
 
    > In the frontend container, simply execute the following commands.
+   >
    > ```
    > sudo npm install
    > ```
+   >
    > Note that the owner of node_modules is root, so sudo privileges are required.
    > As with the api container, running `npm run dev` will generate an error because the environment variable is not set. Ask the administrator for the environment variables.
