@@ -4,22 +4,28 @@ services:
   api:
     build:
       context: api
+      dockerfile: Dockerfile
     ports:
       - "8000:80"
-    depends_on:
-      - db
     volumes:
       - ./api/YMovieHelper:/home/node/YMovieHelper
     tty: true
     working_dir: "/home/node/YMovieHelper"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:80/health_check"]
+      interval: 10s
+      timeout: 5s
+      start_period: 60s
 
   frontend:
     build:
       context: frontend
+      dockerfile: Dockerfile
     ports:
       - "3000:3000"
     depends_on:
-      - api
+      api:
+        condition: service_healthy
     volumes:
       - ./frontend/app:/home/node/app
       - exception-volumes:/home/node/app/node_modules
