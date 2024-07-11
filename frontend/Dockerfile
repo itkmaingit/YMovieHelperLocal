@@ -1,4 +1,4 @@
-FROM node:18
+FROM node:16
 # Install basic development tools
 RUN apt update && apt install -y less man-db sudo
 
