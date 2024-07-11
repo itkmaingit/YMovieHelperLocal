@@ -8,7 +8,6 @@
 - WSL
 - Docker(Desktop)
 - VSCode
-- Dev Containers(VSCode の拡張機能)
 - git
 
 検索をすればこれらアプリケーションのインストール方法は分かるはずです。
@@ -17,22 +16,31 @@
 
 ---
 
-1. 以下コマンドを実行
+**Update**
 
-```:bash
+以前とはアプリケーションの起動方法が変わっています。お手数ですが、再度ご確認のほどよろしくお願いいたします。
+
+1. 以下コマンドの実行(WSLのコマンド上)
+ -> Windowsであれば、Win + Rボタンで`wsl`と入力して、出てきた画面で以下のコマンドを実行して下さい。
+
+```bash
+# 1回目
 git clone https://github.com/itkmaingit/YMovieHelperLocal.git
+cd YMovieHelperLocal
+sudo apt install -y make
+make init
 ```
 
-2. VSCode 上で `YMovieHelperLocal` のフォルダーを開く
-3. F1 を押して Remote Containers の拡張機能のコマンドの中の`Dev Containers: Open Folder in Container...`というコマンドを実行し、`YMovieHelperLocal/api`を選択する
-4. VSCode 上で Ctrl + Shift + N を押して、もう一度`Dev Containers: Open Folder in Container...`を実行し、次は`YMovieHelperLocal/frontend`を選択する
-5. 10 分程度待ってから、PC のブラウザで`http://localhost:3000`にアクセスすれば、YMovieHelper にアクセスすることができます。
+```bash
+# 2回目以降
+make run
+```
+
+10分ほど待てば、<http://localhost:3000>にアクセスすればYMovieHelperを使用することができます。
 
 ※画像の再配布の禁止規約より、様々な場所で画像が表示されませんが、これはバグではありません。`YMovieHelperLocal/frontend/public`に画像を配置することで画像が表示されるようになります。
 
 ブラウザに表示された後は、自由に YMovieHelper を無制限に使うことができます。
-
-※ localhost:3000 にアクセスし、20 分待っても表示されない場合は 3 で開いたウィンドウで Ctrl+@を押し、そこで`make init`、4 で開いたウィンドウで Ctrl+@を押してそこで`npm run dev`と入力してください。
 
 ---
 

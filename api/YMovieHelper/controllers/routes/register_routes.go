@@ -7,7 +7,7 @@ import (
 
 func RegisterRoutes(router *gin.Engine) {
 	// router.POST("/login", handlers.Login)
-	// router.GET("health_check", handlers.HealthCheck)
+	router.GET("health_check", handlers.HealthCheck)
 	// router.GET("/auth", handlers.Auth)
 	// router.POST("/user", handlers.CreateUser)
 	// user := router.Group("/user")
