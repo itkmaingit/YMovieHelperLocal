@@ -2,6 +2,7 @@ version: "3.9"
 
 services:
   api:
+    container_name: api
     build:
       context: api
       dockerfile: Dockerfile
@@ -10,28 +11,31 @@ services:
     volumes:
       - ./api/YMovieHelper:/home/node/YMovieHelper
     tty: true
+    stdin_open: true
     working_dir: "/home/node/YMovieHelper"
-    healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:80/health_check"]
-      interval: 10s
-      timeout: 5s
-      start_period: 60s
+    # healthcheck:
+    #   test: ["CMD", "curl", "-f", "http://localhost:80/health_check"]
+    #   interval: 10s
+    #   timeout: 5s
+    #   start_period: 60s
 
   frontend:
+    container_name: frontend
     build:
       context: frontend
       dockerfile: Dockerfile
     ports:
       - "3000:3000"
     depends_on:
-      api:
-        condition: service_healthy
+      - api
+        # condition: service_healthy
     volumes:
       - ./frontend/app:/home/node/app
       - exception-volumes:/home/node/app/node_modules
 
     working_dir: "/home/node/app"
     tty: true
+    stdin_open: true
 
 volumes:
   exception-volumes:

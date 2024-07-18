@@ -11,4 +11,8 @@ RUN apt update && apt install -y less man-db sudo make
 
 WORKDIR /home/node/app
 
+COPY app/ ./
+RUN chmod +x scripts/startup.sh
+
+
 CMD ["bash", "scripts/startup.sh"]
