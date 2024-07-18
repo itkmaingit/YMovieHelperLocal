@@ -12,5 +12,7 @@ RUN apt update && apt install -y less man-db sudo default-mysql-client sqlite3 m
 ENV PROJECT_NAME=YMovieHelper
 
 WORKDIR /home/node/YMovieHelper
+COPY YMovieHelper/ ./
+RUN chmod +x scripts/startup.sh
 
 CMD ["bash", "scripts/startup.sh"]
