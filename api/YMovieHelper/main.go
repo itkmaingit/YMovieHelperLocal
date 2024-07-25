@@ -6,7 +6,6 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/itkmaingit/YMovieHelper/controllers/middlewares"
 	"github.com/itkmaingit/YMovieHelper/controllers/routes"
-	_ "github.com/itkmaingit/YMovieHelper/docs"
 	"github.com/itkmaingit/YMovieHelper/repository"
 	"github.com/joho/godotenv"
 
